@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      run: 
+    - uses: actions/checkout@v2
+     
+    run: |
         cd $GITHUB_WORKSPACE
         cd bin
         source update-all.sh
