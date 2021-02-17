@@ -1,0 +1,14 @@
+name: quick_update
+on:
+  schedule:
+    - cron:  '33 1 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+      run: 
+        cd $GITHUB_WORKSPACE
+        cd bin
+        source update-all.sh
