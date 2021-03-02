@@ -24,7 +24,7 @@ curl -s -L -R $MEMBERSURL -o "$FILE.tsv"
 
 if [ -s $FILE".tsv" ]; then
   cat "../template_header.html" >$FILE".html"
-  echo "<div class=\"title\">Members</div> <div class=\"subcont\">" >>$FILE".html"
+  echo "<div class=\"title\">Members!</div> <div class=\"subcont\">" >>$FILE".html"
 
   tail -n +3 $FILE".tsv" |
     sed -e "/^[[:space:]]*$/d" |
