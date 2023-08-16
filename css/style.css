@@ -45,3 +45,9 @@ ul.menu li ul li a:hover {
 	padding-left: 15px;
 	font-weight: bold;
 }
+
+.btn-bookTicketBtn {
+  background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+}
